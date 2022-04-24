@@ -1,0 +1,29 @@
+package main
+
+import (
+	"fmt"
+
+	"github.com/justincpresley/go-bareml"
+)
+
+func main() {
+	var input = []float64{0.2, 0.5, 0.1}
+	var target = []float64{0.2, 0.5}
+
+	// The first int must be len(input) and the last int must be len(target)
+	var topology = []int{3, 2, 10, 2}
+
+	var (
+		learningRate float64 = 0.05
+		momentum     float64 = 1
+		bias         float64 = 1
+	)
+
+	neuralnet := bareml.NewNeuralNetwork(topology)
+
+	fmt.Printf("Begin Training...\n")
+	for i := 0; i < 1000; i++ {
+		neuralnet.Train(input, target, bias, learningRate, momentum)
+		fmt.Printf("Epoch: %d | Error %f\n", i, neuralnet.TotalError())
+	}
+}
