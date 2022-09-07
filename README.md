@@ -1,4 +1,4 @@
-# Bare Machine Learning Library in Go
+# A Bare-bones Machine Learning Library in Go
 
 This Go library provides an API which allows for basic machine learning capability.
 This library contains no external dependencies, is completely go-based, and fully implements a neural network.
