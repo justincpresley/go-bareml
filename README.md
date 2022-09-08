@@ -3,7 +3,7 @@
 This Go library provides an API which allows for basic machine learning capability.
 This library contains no external dependencies, is completely go-based, and fully implements a neural network.
 
-*I followed along with a C++ version while making this library. You can links to that version below.*
+*I followed along with a C++ version while making this library. Links to that version are below.*
 
 Links: [Repository](https://github.com/ralampay/ann) - [Videos](https://www.youtube.com/watch?v=PQo78WNGiow&list=PL2-7U6BzddIYBOl98DDsmpXiTcj1ojgJG)
 
